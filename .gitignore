@@ -2,6 +2,7 @@
 .env
 .vscode/
 .*pdf
+weather_venv/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
