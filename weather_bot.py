@@ -6,7 +6,7 @@
 #    By: josfelip <josfelip@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/26 11:38:18 by josfelip          #+#    #+#              #
-#    Updated: 2025/02/26 11:47:07 by josfelip         ###   ########.fr        #
+#    Updated: 2025/02/26 12:04:39 by josfelip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -121,7 +121,7 @@ def extract_location_from_query(query):
     
     try:
         message = claude.messages.create(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-sonnet",
             max_tokens=50,
             system=system_prompt,
             messages=[
@@ -168,7 +168,7 @@ def is_weather_query(query):
     
     try:
         message = claude.messages.create(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-sonnet",
             max_tokens=5,
             system=system_prompt,
             messages=[
@@ -226,7 +226,7 @@ def generate_weather_response(query, weather_data):
     
     try:
         message = claude.messages.create(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-sonnet",
             max_tokens=150,
             system=system_prompt,
             messages=[
