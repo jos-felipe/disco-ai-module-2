@@ -6,7 +6,7 @@
 #    By: josfelip <josfelip@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/26 10:31:42 by josfelip          #+#    #+#              #
-#    Updated: 2025/02/26 10:31:45 by josfelip         ###   ########.fr        #
+#    Updated: 2025/02/26 10:42:17 by josfelip         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@
 """
 Test script to verify that the virtual environment and WeatherAPI access are working correctly.
 This script attempts to retrieve basic weather data from the WeatherAPI.com service
-for a default location (Paris, France).
+for a default location (Sao Paulo, Brazil).
 
 Note: You'll need to sign up for a free API key at weatherapi.com
 """
@@ -50,7 +50,7 @@ def test_api_connection():
         url = "https://api.weatherapi.com/v1/current.json"
         params = {
             "key": api_key,
-            "q": "Paris",
+            "q": "Sao Paulo",
             "aqi": "no"
         }
         
