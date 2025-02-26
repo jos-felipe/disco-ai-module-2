@@ -1,7 +1,7 @@
 # Local environment files
 .env
 .vscode/
-.*pdf
+*.pdf
 weather_venv/
 
 # Byte-compiled / optimized / DLL files
